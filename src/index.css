@@ -367,8 +367,10 @@ tbody tr:hover {
   font-size: 1rem;
 }
 
+/* --------------------------------------------------------
+   People
+-------------------------------------------------------- */
 
-/* People Section Bubble Styling */
 .people-bubbles {
   display: flex;
   flex-wrap: wrap;
@@ -411,7 +413,7 @@ tbody tr:hover {
 }
 
 .person-bubble h4 {
-  margin-top: 50px; /* provide space below the image */
+  margin-top: 50px; 
   font-family: var(--heading-font);
   color: var(--brand-color);
   font-size: 1.1rem;
@@ -440,6 +442,7 @@ tbody tr:hover {
   border-radius: 15px;
   font-size: 0.75rem;
 }
+
 
 
 /* --------------------------------------------------------
