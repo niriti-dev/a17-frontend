@@ -444,6 +444,56 @@ tbody tr:hover {
 }
 
 
+/* Manuscripts Section - Bubble Styling */
+.manuscript-bubbles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: var(--spacing-lg);
+  padding: 0 1rem;
+  justify-items: center;
+}
+
+.manuscript-bubble-card {
+  background: linear-gradient(135deg, var(--card-bg), #f9f9f9);
+  border-radius: 50%;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.manuscript-bubble-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.manuscript-bubble-card h4 {
+  font-family: var(--heading-font);
+  color: var(--brand-color);
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.manuscript-bubble-card .submission-date {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.manuscript-bubble-card .status {
+  font-size: 0.9rem;
+  color: var(--brand-color);
+  font-weight: 600;
+}
+
+
 
 /* --------------------------------------------------------
    Responsive
