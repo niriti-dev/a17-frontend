@@ -4,7 +4,7 @@ function Sidebar({ isOpen, toggleSidebar }) {
   return (
     <aside className={`sidebar ${isOpen ? "open" : ""}`} id="sidebar">
       <div className="brand">PRIME DASH</div>
-      {/* Navigation Section */}
+
       <div className="nav-section">
         <h4>Navigation</h4>
         <ul>
@@ -25,7 +25,7 @@ function Sidebar({ isOpen, toggleSidebar }) {
           </li>
         </ul>
       </div>
-      {/* Additional Sidebar Links */}
+
       <ul>
         <li>
           <a href="#" onClick={toggleSidebar}>Analytics</a>
