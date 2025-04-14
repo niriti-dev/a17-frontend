@@ -1,14 +1,28 @@
-function TopBar() {
-    return (
-      <header className="topbar">
-        <h1>Manuscript Dashboard</h1>
-        <div className="user-profile">
-          <span>John Doe</span>
-          <img src="https://via.placeholder.com/36" alt="User" />
-        </div>
-      </header>
-    );
-  }
-  
-  export default TopBar;
-  
+import React from 'react';
+import './Topbar.css';
+
+const Topbar = () => {
+  return (
+    <header className="topbar">
+      {/* Brand / Logo */}
+
+      {/* Navigation Links */}
+      <nav>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/users">Users</a>
+        <a href="/manuscripts">Manuscripts</a>
+      </nav>
+
+      {/* User Profile Section */}
+      <div className="user-profile">
+        <img 
+          src="https://via.placeholder.com/36" 
+          alt="User Profile" 
+        />
+        <span>Username</span>
+      </div>
+    </header>
+  );
+};
+
+export default Topbar;

@@ -270,6 +270,7 @@ body {
   max-width: calc(220px * 4 + var(--spacing-lg) * 3);
   margin-left: auto;
   margin-right: auto;
+  margin-top: 40px; 
 }
 
 

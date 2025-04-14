@@ -14,12 +14,9 @@ function Dashboard() {
 
   return (
     <div className="dashboard">
-      <TopBar toggleSidebar={toggleSidebar} />
-      <Sidebar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
-      <div className={`main ${sidebarOpen ? "shifted" : ""}`}>
+      <TopBar />
         <SummaryCards />
         <RecentSubmissionsTable />
-      </div>
     </div>
   );
 }
